@@ -8,6 +8,11 @@ set shiftwidth=4
 set expandtab
 set softtabstop=2
 set pastetoggle=<F2>
+inoremap ' ''<ESC>i
+inoremap " ""<ESC>i
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {<CR>}<ESC>O
 map <F3> :NERDTreeMirror<CR>
 map <F3> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
