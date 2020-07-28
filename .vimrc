@@ -13,6 +13,7 @@ inoremap " ""<ESC>i
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {<CR>}<ESC>O
+autocmd FileType python inoremap { {}<ESC>i
 map <F3> :NERDTreeMirror<CR>
 map <F3> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
